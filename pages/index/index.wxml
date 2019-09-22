@@ -1,0 +1,20 @@
+<view class="container" wx:if="{{hasWeatherData}}">
+
+    <picker mode="region" value="{{region}}" bindchange="bindRegionChange">
+        <view>点击选择地区：{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
+    </picker>
+
+    <image class="wether-pic" src="../../images/{{weather.cond_code}}.png" />
+
+    <view class="weather">
+        <view class="weather-item"> 天气: {{weather.cond_txt}}</view>
+        <view class="weather-item"> 气温：{{weather.tmp}}摄氏度</view>
+        <view class="weather-item"> 体感温度：{{weather.fl}}摄氏度</view>
+        <view class="weather-item"> 风向：{{weather.wind_dir}} </view>
+        <view class="weather-item"> 风力：{{weather.wind_sc}}级</view>
+        <view class="weather-item"> 风速：{{weather.wind_spd}}公里/小时</view>
+        <view class="weather-item"> 相对湿度: {{weather.hum}}</view>
+        <view class="weather-item"> 大气压：{{weather.pres}}</view>
+        <view class="weather-item"> 能见度: {{weather.vis}}公里</view>
+    </view>
+</view>

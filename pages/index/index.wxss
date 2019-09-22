@@ -1,0 +1,24 @@
+/* pages/about/about.wxss */
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wether-pic {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.weather-item + .weather-item {
+    margin-top: 20rpx;
+}
